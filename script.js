@@ -1,6 +1,8 @@
 function updateResult() {
-  const expectedHours = dropRateElement.value / killsInputElement.value;
-  resultElement.textContent = `Expected kills: ${dropRateElement.value} kills`;
+  const killsPerhour = killsInputElement.valueAsNumber;
+  const dropRate = dropRateElement.valueAsNumber;
+  const expectedHours = dropRate / killsPerhour;
+  resultElement.textContent = `Expected kills: ${dropRate} kills`;
   resultElement.textContent += `, Expected time: ${expectedHours.toFixed(1)} hours`;
 }
 
