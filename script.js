@@ -1,6 +1,7 @@
 function updateResult() {
-  resultElement.textContent = `Kills per hour: ${killsInputElement.value}`;
-  resultElement.textContent += `, Drop rate: 1/${dropRateElement.value}`;
+  const expectedHours = dropRateElement.value / killsInputElement.value;
+  resultElement.textContent = `Expected kills: ${dropRateElement.value} kills`;
+  resultElement.textContent += `,Expected time: ${expectedHours.toFixed(1)} hours`;
 }
 
 const resultElement = document.getElementById("result");
