@@ -1,6 +1,8 @@
+function updateResult() {
+  resultElement.textContent = `Kills per hour: ${inputElement.value}`;
+}
+
 const resultElement = document.getElementById("result");
 const inputElement = document.getElementById("killsInput");
 
-inputElement.addEventListener("input", () => {
-  resultElement.textContent = `Kills per hour: ${inputElement.value}`;
-});
+inputElement.addEventListener("input", updateResult);
