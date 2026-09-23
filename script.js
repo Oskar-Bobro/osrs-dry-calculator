@@ -1,8 +1,11 @@
 function updateResult() {
-  resultElement.textContent = `Kills per hour: ${inputElement.value}`;
+  resultElement.textContent = `Kills per hour: ${killsInputElement.value}`;
+  resultElement.textContent += `, Drop rate: 1/${dropRateElement.value}`;
 }
 
 const resultElement = document.getElementById("result");
-const inputElement = document.getElementById("killsInput");
+const killsInputElement = document.getElementById("killsInput");
+const dropRateElement = document.getElementById("dropRateInput");
 
-inputElement.addEventListener("input", updateResult);
+killsInputElement.addEventListener("input", updateResult);
+dropRateElement.addEventListener("input", updateResult);
