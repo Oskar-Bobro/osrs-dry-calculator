@@ -7,25 +7,34 @@
   </head>
   <body>
     <h1>OSRS Dry Calculator</h1>
-    <p>Welcome to the OSRS Dry Calculator!</p>
-    <label for="killsInput">Number of kills per hour:</label>
-    <input
-      type="number"
-      id="killsInput"
-      placeholder="Enter number of kills per hour"
-    /><br />
-    <label for="dropRateInput">Enter drop rate (e.g., 128):</label>
-    <input
-      type="number"
-      id="dropRateInput"
-      placeholder="Enter drop rate i.e. 128"
-    /><br />
-    <label for="killsSoFarInput">Number of kills so far:</label>
-    <input
-      type="number"
-      id="killsSoFarInput"
-      placeholder="Enter number of kills so far"
-    />
+    <p>
+      Enter a drop rate to see how long it should take, and how unlucky you are
+      if you're still waiting.
+    </p>
+    <div class="field">
+      <label for="killsInput">Number of kills per hour:</label>
+      <input
+        type="number"
+        id="killsInput"
+        placeholder="Enter number of kills per hour"
+      />
+    </div>
+    <div class="field">
+      <label for="dropRateInput">Enter drop rate (e.g., 128):</label>
+      <input
+        type="number"
+        id="dropRateInput"
+        placeholder="Enter drop rate i.e. 128"
+      />
+    </div>
+    <div class="field">
+      <label for="killsSoFarInput">Number of kills so far:</label>
+      <input
+        type="number"
+        id="killsSoFarInput"
+        placeholder="Enter number of kills so far"
+      />
+    </div>
     <p id="result">Result will appear here</p>
     <script src="script.js"></script>
   </body>
