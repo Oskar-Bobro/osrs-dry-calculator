@@ -5,3 +5,16 @@ body {
   padding: 1rem;
   line-height: 1.5;
 }
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+
+.field {
+  margin-bottom: 1.25rem;
+}
