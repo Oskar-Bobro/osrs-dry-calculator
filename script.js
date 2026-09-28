@@ -18,8 +18,8 @@ function updateResult() {
   const rate = 1 / dropRate;
   const dryChance = (1 - rate) ** killsSoFar;
   resultElement.textContent = `Expected kills: ${dropRate}`;
-  resultElement.textContent += `\n Expected time: ${expectedHours.toFixed(1)} hours`;
-  resultElement.textContent += `\n Chance of still being dry: ${(dryChance * 100).toFixed(1)}%`;
+  resultElement.textContent += `\nExpected time: ${expectedHours.toFixed(1)} hours`;
+  resultElement.textContent += `\nChance of still being dry: ${(dryChance * 100).toFixed(1)}%`;
 }
 
 const resultElement = document.getElementById("result");
