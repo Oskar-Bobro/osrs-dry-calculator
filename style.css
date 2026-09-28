@@ -23,3 +23,7 @@ input {
   font: inherit;
   padding: 0.625rem;
 }
+
+#result {
+  white-space: pre-line;
+}
